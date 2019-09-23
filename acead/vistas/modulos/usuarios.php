@@ -616,7 +616,7 @@ MODAL EDITAR USUARIO
 
             <!-- ENTRADA PARA LA CONTRASEÑA -->
 
-             <div class="form-group">
+             <!-- <div class="form-group">
 
                 <div class="input-group">
 
@@ -627,7 +627,7 @@ MODAL EDITAR USUARIO
                 </div>
                 <p>La contraseña debera contener: una mayuscula, una minuscula, un numero y un caracter especial.</p>
 
-              </div>
+              </div> -->
 
             <!-- ENTRADA PARA SELECCIONAR SU DEPARTAMENTO -->
 

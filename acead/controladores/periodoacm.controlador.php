@@ -23,7 +23,7 @@ class ControladorPeriodoAcm{
 
 
     if(isset($_POST["editarPeriodo"])){
-echo "<script type='text/javascript'>alert('control')</script>";
+//echo "<script type='text/javascript'>alert('control')</script>";
       $tabla = "tbl_periodoacademico";
 
               $datos = array("DescripPeriodo" => $_POST["editarPeriodo"],

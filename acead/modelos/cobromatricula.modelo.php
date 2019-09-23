@@ -23,26 +23,26 @@ class ModeloCobroMatricula
     else
     {
       return "error";
-      echo "<script type='text/javascript'>alert('neles')</script>";
+      echo "<script type='text/javascript'>alert('Error')</script>";
     }
     $stmt->close();
     $stmt = null;
   }
 
- 
+
 /*====================  MOSTRAR PAGOS DE MATRICULA COBRADOS ===================================*/
         static public function mdlPagosMatricula($ida)
-        {    
+        {
             if($ida !== null)
             {
                 $stmt0 = ConexionBD::Abrir_Conexion()->prepare("select  concat(TA.PrimerNombre, ' ', TA.SegundoNombre, ' ', TA.PrimerApellido, ' ', TA.segundoapellido) AS nombre,TCM.TotalMatricula AS TM from tbl_cobromatricula TCM inner join tbl_alumnos TA on TCM.Id_Alumno = TA.Id_Alumno WHERE TA.Id_Alumno = ".$ida.";");
                 $stmt0->execute();
                 $resultado0 = $stmt0->fetchAll(PDO::FETCH_BOTH);
-                
+
                 return $resultado0;
-            }   
-            
-            
+            }
+
+
         }
 
 /*====================  MOSTRAR VALIDAR PAGOS DE MATRICULA YA COBRADOS =============================*/
